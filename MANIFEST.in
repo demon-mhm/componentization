@@ -1,0 +1,1 @@
+global-include *.pyi *.proto *.json *.sql

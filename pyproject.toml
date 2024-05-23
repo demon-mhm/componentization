@@ -1,0 +1,64 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61", "grpcio-tools", "setuptools_scm>=8"]
+
+[project]
+name = "ns.tdata"
+dynamic = ["version"]
+description = "sample components package"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["loguru", "protobuf"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+[tool.setuptools_scm]
+# can be empty if no extra settings are needed, presence enables setuptools_scm
+version_file = "src/ns/tdata/_version.py"
+
+[project.optional-dependencies]
+develop = [
+  "httpx",
+  "pytest",
+  "pytest-coverage",
+  "pytest-asyncio",
+  "mypy",
+  "black",
+  "isort",
+  "ruff",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+addopts = """
+  -xvv
+  -s
+  --show-capture=log
+  --cov-report=term:skip-covered
+  --cov-report=html:coverage
+  --cov=src/ns/tdata
+  --cov=wire
+  --maxfail=1
+  --no-cov-on-fail
+"""
+
+[tool.black]
+line-length = 100
+
+[tool.isort]
+line_length = 100
+
+[tool.flake8]
+max-line-length = 100
+
+[tool.ruff]
+line-length = 100
+
+[tool.pyright]
+exclude = [".venv"]
+venvPath = "./src"
+venv = ".venv"

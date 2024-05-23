@@ -1,0 +1,401 @@
+syntax = "proto3";
+
+package tdata;
+
+import "google/protobuf/timestamp.proto";
+
+
+message TaxItem {
+    string _ADAmount = 1;
+    string _ADBaseAmt = 2;
+    string _amount = 3;
+    string _baseAmt = 4;
+    string _desc = 5;
+    string _id = 6;
+    string _rate = 7;
+}
+
+message Offer {
+    string _LongDescription = 1;
+    string _ShortDescription = 2;
+    string _applied = 3;
+    string _customerId = 4;
+    string _customerType = 5;
+    string _name = 6;
+    string _offerBarcodeType = 7;
+    string _offerId = 8;
+    string _offerType = 9;
+    string _override = 10;
+    string _promotionId = 11;
+    string _reward = 12;
+    string _undoOnBft = 13;
+}
+
+message Promotion {
+    string _countTowardsPromotionLimit = 1;
+    string _counter = 2;
+    string _discountAmount = 3;
+    string _discountLimit = 4;
+    string _discountType = 5;
+    string _exclusive = 6;
+    string _id = 7;
+    string _isSaleDiscount = 8;
+    string _offerId = 9;
+    string _promotionName = 10;
+    string _promotionOnTender = 11;
+    string _returnedValue = 12;
+    string _showIndividualPrices = 13;
+    string _undoOnBft = 14;
+}
+
+message Promotions {
+    string _authorizedZeroAmount = 1;
+    string _tenderId = 2;
+    repeated Promotion Promotion = 3;
+}
+
+message Customer {
+    string _greeting = 1;
+    string _id = 2;
+    string _loyaltyCardId = 3;
+    string _loyaltyCardType = 4;
+    string _nickname = 5;
+    string _type = 6;
+}
+
+message Action {
+    string _name = 1;
+    string _newValue = 2;
+    string _oldValue = 3;
+}
+
+message Actions {        
+    Action Action = 1;
+}
+
+message PromotionApplied {
+    string _discountAmount = 1;
+    string _discountLimit = 2;
+    string _discountType = 3;
+    bool _eligible = 4;
+    string _offerId = 5;
+    string _originalItemPromoQty = 6;
+    string _originalPrice = 7;
+    string _originalProductCode = 8;
+    string _promotionCounter = 9;
+    string _promotionId = 10;
+    string _reward = 11;
+    //Actions Actions = 12; TODO Это поле не используется
+}
+
+message ItemView {
+    
+    message TaxChain {
+        
+        message Tax {
+            string _ADAmount = 1;
+            string _ADBaseAmt = 2;
+            string _amount = 3;
+            string _baseAmt = 4;
+            string _id = 5;
+            string _rate = 6;
+            string _type = 7;
+        }
+        
+        Tax tax = 1;
+    }
+
+    message Discounts {
+        
+        message Discount {
+            string _amount = 1;
+            string _description = 2;
+            string _id = 3;
+            string _reduction = 4;
+            string _type = 5;
+            string _value = 6;
+            string _offerId = 7;
+        }
+
+        Discount discount = 1;
+    }
+    
+    string itemCode = 1;
+    string productCode = 2;
+    string quantity = 3;
+    string grilledQuantity = 4;
+    string AutoCondiment = 5;
+    string unitPrice = 6;
+    string netUnitPrice = 7;
+    string unitTax = 8;
+    optional string totalPrice = 9;
+    string netTotalPrice = 10;
+    optional string totalTax = 11;
+    optional string ADTotalPrice = 12;
+    string ADNetTotalPrice = 13;
+    optional string ADTotalTax = 14;
+    string discount = 15;
+    TaxChain taxChain = 16;
+    // Discounts discounts = 17; TODO пока я убрал это поле, потому что оно не используется
+    string totalPriceAfterSetPrice = 18;
+    string description = 19;
+    optional string longName = 20;
+    string dtName = 21;
+    string level = 22;
+    string prodAction = 23;
+    string productType = 24;
+    string familyGroup = 25;
+    string category = 26;
+    string quantityChanged = 27;
+    optional string quantityPromo = 28;
+    string quantityItemPromo = 29;
+    string isGrillLine = 30;
+    string colorRGB = 31;
+    string saleOrder = 32;
+    string grillReason = 33;
+    string showChosenItemAsIngredient = 34;
+    string displayOrder = 35;
+    string displayGroup = 36;
+    string showWay = 37;
+    string dayPart = 38;
+    string specialModifiers = 39;
+    string componentMinQtd = 40;
+    string componentMaxQtd = 41;
+    string componentDefaultQtd = 42;
+    string showOnCOD = 43;
+    string currentSelected = 44;
+    PromotionApplied PromotionApplied = 45;
+    string DeliveryEarlyQty = 46;
+    string isCYT = 47;
+    string sellSequence = 48;
+    string displayNumbersInsteadofModifiers = 49;
+}
+
+message ViewTimes {
+    string _closeDrawerTime = 1;
+    string _offset = 2;
+    string _orderTime = 3;
+    string _payTime = 4;
+    string _storeTime = 5;
+    string _totalTime = 6;
+}
+
+message Reduction {
+    
+    message ItemsValueBeforeTotalSaleType {
+        string _saleType = 1;
+        string _value = 2;
+    }
+    
+    message ItemsValueAfterTotalSaleType {
+        string _saleType = 1;
+        string _value = 2;
+    }
+
+    string reductionsAfterTotal = 1;
+    string itemsBeforeTotal = 2;
+    string itemsAfterTotal = 3;
+    string reductionValueAfterTotal = 4;
+    string reductionValueBeforeTotal = 5;
+    string itemsValueAfterTotal = 6;
+    //TODO пока я убрал это поле, потому что оно не используется
+    //repeated ItemsValueBeforeTotalSaleType itemsValueBeforeTotalSaleType = 7;
+    //repeated ItemsValueAfterTotalSaleType itemsValueAfterTotalSaleType = 8;
+}
+
+message Fiscal_Information {
+    string _ModifiedAfterTotal = 1;
+    string _TIN = 2;
+    string _ZIP = 3;
+    string _address = 4;
+    string _name = 5;
+}
+
+message ItemTenderView {
+    string kind = 1;
+    string description = 2;
+    string code = 3;
+    string qty = 4;
+    string value = 5;
+    string fiscalIndex = 6;
+    string taxOption = 7;
+    string cat = 8;
+    string fValue = 9;
+    string pValue = 10;
+    string srcPOSId = 11;
+    string subtotalOpt = 12;
+    string tenderRoundAdj = 13;
+}
+
+message Info {
+    string _name = 1;
+    string _value = 2;
+}
+
+message CustomInfo {
+    repeated Info Info = 1; //TODO repeated или нет
+}
+
+message View {
+    string _refundReason = 1;
+    string _BDGrossAmount = 2;
+    string _BDTotalAmount = 3;
+    string _BDTotalTax = 4;
+    string _BPGrossAmount = 5;
+    string _BPTotalAmount = 6;
+    string _BPTotalTax = 7;
+    string _FVM =  8;
+    string _ManagerID = 9;
+    string _MobileOrderStatus = 10;
+    string _TBD = 11;
+    string _automaticVoidedOrder = 12;
+    string _businessDay = 13;
+    string _byPass = 14;
+    string _ccmAutoBundling = 15;
+    string _dayOfWeek = 16;
+    string _disabChoices = 17;
+    string _discountAftRound = 18;
+    string _discountRoundAdj = 19;
+    string _endOfSaleDt = 20;
+    string _endOfSaleTm = 21;
+    string _expoMonitor = 22;
+    string _foeSelected = 23;
+    string _foeStatus = 24;
+    string _forceKVSDisplay = 25;
+    string _fpFiscalReceiptNumber = 26;
+    string _fpReceiptNumber = 27;
+    string _grossAmount = 28;
+    optional string _homeDeliveryOrderId = 29;
+    string _isCYTAllowed = 30;
+    string _isInsertedOrder = 31;
+    string _isMOT = 32;
+    string _isPromoOrder = 33;
+    string _isSideSale = 34;
+    string _kind = 35;
+    string _major = 36;
+    string _minor = 37;
+    string _nativeTotalDue = 38;
+    string _networkStatus = 39;
+    string _operatorId = 40;
+    string _operatorName = 41;
+    string _orderDayPart = 42;
+    string _orderId = 43;
+    string _orderKey = 44;
+    optional string _EcpOrderId = 45;
+    string _orderSrc = 46;
+    string _orderTotalRoundAdj = 47;
+    string _orderTotalRoundEnabled = 48;
+    string _paymentType = 49;
+    string _pod = 50;
+    string _prodStatus = 51;
+    string _productionMonitor = 52;
+    string _productionSide = 53;
+    string _remPod = 54;
+    string _saleDate = 55;
+    string _saleStatus = 56;
+    string _saleTime = 57;
+    string _selectedItem = 58;
+    string _seqNo = 59;
+    string _tableServiceArea = 60;
+    string _tableServiceId = 61;
+    string _tableServiceMode = 62;
+    string _tableServiceZoneId = 63;
+    string _tandem = 64;
+    string _taxMode = 65;
+    string _tenderAction = 66;
+    string _tenderPOS = 67;
+    string _tenderStatus = 68;
+    string _totalAmount = 69;
+    string _totalDue = 70;
+    string _totalDueCurrency = 71;
+    string _totalDueRoundAdj = 72;
+    string _totalTax = 73;
+    string _trackSaleStatus = 74;
+    string _transactionKind = 75;
+    string _trxSubKind = 76;
+    string _type = 77;
+    string _uniqueId = 78;
+    string _refundedOrderId = 79;
+    string _StoreId = 80;
+    TaxItem taxItem = 81;
+    repeated Offer Offers = 82;
+    Promotions Promotions = 83;
+    Customer Customer = 84;
+    repeated ItemView ItemView = 85;
+    Reduction Reduction = 87;
+    Fiscal_Information Fiscal_Information = 88;
+    ItemTenderView ItemTenderView = 89;
+    CustomInfo CustomInfo = 90;
+    string Cashless = 91;
+    string _orbOrderDisplayNumber = 92;
+}
+
+
+message TransactionDataRequest {
+    View View = 1; 
+}
+
+
+message FormattedTData {
+
+    message CustomInfoData {
+        string orignalPodName = 1;
+        string customerNickname = 2;
+    }
+    
+    message Item {
+        string itemCode = 1;
+        int32 productCode = 2;
+        int32 quantity = 3;
+        int32 level = 4;
+        string productType = 5;
+        int32 promotionId = 6;
+        int32 offerId = 7;
+        float unitPrice = 8;
+        float totalPrice = 9;
+        string longName = 10;
+        int32 quantityPromo = 11;
+        float netUnitPrice = 12;
+        float unitTax = 13;
+        bool eligible = 14;
+        float ADTotalPrice = 15;
+        float totalTax = 16;
+        float ADTotalTax = 17;
+    }
+    
+    message Promotion {
+        string id = 1;
+        string offerId = 2;
+        string exclusive = 3;
+        string counter = 4;
+    }
+    
+    message Offer {
+        string offerId = 1;
+        string customerId = 2;
+        string offerType = 3;
+        string offerBarcodeType = 4;
+    }
+
+    google.protobuf.Timestamp date = 1;
+    int32 storeId = 2;
+    int32 transactionKind = 3;
+    string orderKey = 4;
+    string ecpOrderId = 5;
+    CustomInfoData customInfo = 6;
+    string tenderPOS = 7;
+    float grossAmount = 8;
+    int32 customerId = 9;
+    string profileUuid = 11;
+    string loyaltyCardId = 12;
+    repeated Item items = 13;
+    repeated Promotion promotions = 14;
+    repeated Offer offers = 15;
+    int32 orderSrc = 16;
+    string podTypeEnum = 17;
+    float bdTotalTax = 18;
+    float bdTotalAmount = 19;
+    float totalTax = 20;
+    float totalAmount = 21;
+    string saleType = 22;
+}
