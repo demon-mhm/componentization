@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-06-23T12:05:24.200Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="94ZbxerkXa1uW8ct1s7v" version="24.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-24T09:12:56.988Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="1NhjRnIR2bCRjBHHRpIN" version="24.6.2" type="github">
   <diagram name="Page-1" id="f1hbvTTkOySbYcVCAKIO">
-    <mxGraphModel dx="2092" dy="810" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2942" dy="810" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -12,11 +12,11 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zGQMRHKwvaspbXFMUV9o-1" value="CPL Admin&lt;br&gt;[API: Python]&lt;br&gt;&lt;br&gt;управление программ работы КПЛ" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-770" y="270" width="160" height="110" as="geometry" />
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-1" value="CPL Admin&lt;br&gt;[API: Python]&lt;br&gt;&lt;br&gt;управление программ работы КПЛ" style="rounded=0;whiteSpace=wrap;html=1;fillStyle=solid;fillColor=#003F80;" vertex="1" parent="1">
+          <mxGeometry x="-830" y="800" width="160" height="110" as="geometry" />
         </mxCell>
         <mxCell id="zGQMRHKwvaspbXFMUV9o-2" value="CPL Admin db&lt;br&gt;[Database: Postgres]" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="-676" y="440" width="160" height="90" as="geometry" />
+          <mxGeometry x="-736" y="970" width="160" height="90" as="geometry" />
         </mxCell>
         <mxCell id="zGQMRHKwvaspbXFMUV9o-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zGQMRHKwvaspbXFMUV9o-4" target="zGQMRHKwvaspbXFMUV9o-5">
           <mxGeometry relative="1" as="geometry" />
@@ -26,11 +26,11 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zGQMRHKwvaspbXFMUV9o-4" value="CPL Event Manager&lt;br&gt;[API: Python]&lt;br&gt;&lt;br&gt;Обработка сообщений о выполненных действиях, регистрация/статус обработки запросов" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-581" y="270" width="160" height="110" as="geometry" />
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-4" value="CPL Event Manager&lt;br&gt;[API: Python]&lt;br&gt;&lt;br&gt;Обработка сообщений о выполненных действиях, регистрация/статус обработки запросов" style="rounded=0;whiteSpace=wrap;html=1;fillStyle=solid;fillColor=#003F80;" vertex="1" parent="1">
+          <mxGeometry x="-641" y="800" width="160" height="110" as="geometry" />
         </mxCell>
         <mxCell id="zGQMRHKwvaspbXFMUV9o-5" value="CPL Event db&lt;br&gt;[Database: Postgres]" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="-487" y="440" width="160" height="90" as="geometry" />
+          <mxGeometry x="-547" y="970" width="160" height="90" as="geometry" />
         </mxCell>
         <mxCell id="zGQMRHKwvaspbXFMUV9o-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="zGQMRHKwvaspbXFMUV9o-8" target="zGQMRHKwvaspbXFMUV9o-9" parent="1">
           <mxGeometry relative="1" as="geometry" />
@@ -40,33 +40,13 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zGQMRHKwvaspbXFMUV9o-8" value="CPL Loyalty Engine&lt;br&gt;[API: Python]&lt;br&gt;&lt;br&gt;Начисление/списание баллов и запрос баланса&lt;br&gt;Планирование и исполнение действий" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-393" y="270" width="160" height="110" as="geometry" />
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-8" value="CPL Loyalty Engine&lt;br&gt;[API: Python]&lt;br&gt;&lt;br&gt;Начисление/списание баллов и запрос баланса&lt;br&gt;Планирование и исполнение действий" style="rounded=0;whiteSpace=wrap;html=1;fillStyle=solid;fillColor=#003F80;" vertex="1" parent="1">
+          <mxGeometry x="-453" y="800" width="160" height="110" as="geometry" />
         </mxCell>
         <mxCell id="zGQMRHKwvaspbXFMUV9o-9" value="CPL Loyalty db&lt;br&gt;[Database: Postgres]" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="-299" y="440" width="160" height="90" as="geometry" />
+          <mxGeometry x="-359" y="970" width="160" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="zGQMRHKwvaspbXFMUV9o-20" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="-204" y="270" width="254" height="260" as="geometry" />
-        </mxCell>
-        <mxCell id="zGQMRHKwvaspbXFMUV9o-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="zGQMRHKwvaspbXFMUV9o-11" target="zGQMRHKwvaspbXFMUV9o-12" parent="zGQMRHKwvaspbXFMUV9o-20">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="zGQMRHKwvaspbXFMUV9o-17" value="CRUD БД&lt;br&gt;tcp: binary" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zGQMRHKwvaspbXFMUV9o-10">
-          <mxGeometry x="-0.0519" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zGQMRHKwvaspbXFMUV9o-11" value="CPL Clients&lt;br&gt;[API: Python]&lt;br&gt;&lt;br&gt;Управление профилем участника КПЛ&lt;br&gt;(взаимодействие с CIP, статус, профиль)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="zGQMRHKwvaspbXFMUV9o-20">
-          <mxGeometry width="160" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="zGQMRHKwvaspbXFMUV9o-12" value="CPL Clients&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;db&lt;/span&gt;&lt;div&gt;[Database: Postgres]&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="zGQMRHKwvaspbXFMUV9o-20">
-          <mxGeometry x="94" y="170" width="160" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="zGQMRHKwvaspbXFMUV9o-21" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="-10" y="270" width="254" height="260" as="geometry" />
-        </mxCell>
-        <mxCell id="zGQMRHKwvaspbXFMUV9o-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="zGQMRHKwvaspbXFMUV9o-21" source="zGQMRHKwvaspbXFMUV9o-24" target="zGQMRHKwvaspbXFMUV9o-25">
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zGQMRHKwvaspbXFMUV9o-24" target="zGQMRHKwvaspbXFMUV9o-25">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="zGQMRHKwvaspbXFMUV9o-23" value="CRUD БД&lt;br&gt;tcp: binary" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zGQMRHKwvaspbXFMUV9o-22">
@@ -74,11 +54,105 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zGQMRHKwvaspbXFMUV9o-24" value="CPL Partners&lt;br&gt;[API: Python]&lt;br&gt;&lt;br&gt;Управление партнерами: привилегии, правила начислений/списаний, доступные акции" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="zGQMRHKwvaspbXFMUV9o-21">
-          <mxGeometry width="160" height="110" as="geometry" />
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-24" value="CPL Partners&lt;br&gt;[API: Python]&lt;br&gt;&lt;br&gt;Управление партнерами: привилегии, правила начислений/списаний, доступные акции" style="rounded=0;whiteSpace=wrap;html=1;fillStyle=solid;fillColor=#003F80;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="800" width="160" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="zGQMRHKwvaspbXFMUV9o-25" value="CPL Partners&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;db&lt;/span&gt;&lt;div&gt;[Database: Postgres]&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="zGQMRHKwvaspbXFMUV9o-21">
-          <mxGeometry x="94" y="170" width="160" height="90" as="geometry" />
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-25" value="CPL Partners&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;db&lt;/span&gt;&lt;div&gt;[Database: Postgres]&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="24" y="970" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="zGQMRHKwvaspbXFMUV9o-11" target="zGQMRHKwvaspbXFMUV9o-12" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-17" value="CRUD БД&lt;br&gt;tcp: binary" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zGQMRHKwvaspbXFMUV9o-10">
+          <mxGeometry x="-0.0519" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-11" value="CPL Clients&lt;br&gt;[API: Python]&lt;br&gt;&lt;br&gt;Управление профилем участника КПЛ&lt;br&gt;(взаимодействие с CIP, статус, профиль)" style="rounded=0;whiteSpace=wrap;html=1;fillStyle=solid;fillColor=#003F80;" vertex="1" parent="1">
+          <mxGeometry x="-264" y="800" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-12" value="CPL Clients&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;db&lt;/span&gt;&lt;div&gt;[Database: Postgres]&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-170" y="970" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zGQMRHKwvaspbXFMUV9o-26" target="zGQMRHKwvaspbXFMUV9o-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-470" y="660" />
+              <mxPoint x="-184" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-39" value="import orange.clients" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zGQMRHKwvaspbXFMUV9o-36">
+          <mxGeometry x="-0.5816" y="1" relative="1" as="geometry">
+            <mxPoint x="34" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-26" value="CPL Backend&lt;br&gt;[Micromonolite: Python]&lt;br&gt;&lt;br&gt;Api-Gateway web-приложения" style="rounded=0;whiteSpace=wrap;html=1;fillStyle=solid;fillColor=#3399FF;" vertex="1" parent="1">
+          <mxGeometry x="-550" y="470" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-27" value="CPL Wapp db&lt;br&gt;[Database: Postgres]" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-1031" y="940" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zGQMRHKwvaspbXFMUV9o-28" target="zGQMRHKwvaspbXFMUV9o-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-28" value="CPL Wapp&lt;br&gt;[API: Python]&lt;br&gt;&lt;br&gt;Работа веб-приложения" style="rounded=0;whiteSpace=wrap;html=1;fillStyle=solid;fillColor=#003F80;" vertex="1" parent="1">
+          <mxGeometry x="-1040" y="800" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zGQMRHKwvaspbXFMUV9o-26" target="zGQMRHKwvaspbXFMUV9o-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-31" value="import orange.wapp" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zGQMRHKwvaspbXFMUV9o-30">
+          <mxGeometry x="-0.2878" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zGQMRHKwvaspbXFMUV9o-32" target="zGQMRHKwvaspbXFMUV9o-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-34" value="import orange.admin" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zGQMRHKwvaspbXFMUV9o-33">
+          <mxGeometry x="0.0222" y="-2" relative="1" as="geometry">
+            <mxPoint x="2" y="-82" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-35" value="import orange.eventmanager" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zGQMRHKwvaspbXFMUV9o-32" target="zGQMRHKwvaspbXFMUV9o-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-561" y="525" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-32" value="CPL Admin backend&lt;div&gt;[Micromonolite: Python]&lt;br&gt;&lt;br&gt;Api-Gateway web-приложения&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillStyle=solid;fillColor=#3399FF;" vertex="1" parent="1">
+          <mxGeometry x="-830" y="470" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zGQMRHKwvaspbXFMUV9o-26" target="zGQMRHKwvaspbXFMUV9o-24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-470" y="450" />
+              <mxPoint x="10" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-38" value="import orange.partners" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zGQMRHKwvaspbXFMUV9o-37">
+          <mxGeometry x="-0.6102" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zGQMRHKwvaspbXFMUV9o-41" target="zGQMRHKwvaspbXFMUV9o-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-270" y="640" />
+              <mxPoint x="-184" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-43" value="import orange.clients" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zGQMRHKwvaspbXFMUV9o-42">
+          <mxGeometry y="-1" relative="1" as="geometry">
+            <mxPoint x="-25" y="-22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zGQMRHKwvaspbXFMUV9o-41" value="CPL Front Ext&lt;br&gt;[Micromonolite: Python]&lt;br&gt;&lt;br&gt;Приложение для внешних запросов КПЛ Апельсин без верстки" style="rounded=0;whiteSpace=wrap;html=1;fillStyle=solid;fillColor=#3399FF;" vertex="1" parent="1">
+          <mxGeometry x="-300" y="480" width="160" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
